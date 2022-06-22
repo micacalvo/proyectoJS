@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* @Media */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+    
+    .SectionA {
+        display:block
+    }
+
+    .Nameandjob {
+        display: block;
+        font-size: medium;
+        font-weight: 500;
+    }
+ 
+    .containera .container-1 {
+        display: block;
+    }
+    
+    .Image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-fluid-w-50 {
+        width: 50%;
+    }
+    
+    .SectionB .Tith4 h4 {
+     font-size: medium;
+     font-weight: 300;
+     margin: 0px 0px;
+     padding: 0px;
+     border-radius: 5px 0px 5px 0px;     
+}
+
+
+.card-body .card-title {
+   font-size: large;
+   font-weight: 50;
+   color: #433451;
+   display: flex;
+   justify-content: flex-start;
+}
+
+.card-text {
+    font-size: medium;
+    font-weight: 300;
+    text-align: center;
+}
+}
+
+/* Tablets */
+
+@media screen and (min-width: 401px) and (max-width: 1023px) {
+    .SectionA {
+        display:block
+    }
+
+    .Nameandjob {
+        display: block;
+        font-size: medium;
+        font-weight: 500;
+    }
+ 
+    .containera .container-1 {
+        display: block;
+    }
+    
+    .Image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-fluid-w-50 {
+        width: 50%;
+    }
+    .SectionB .Tith4 h4 {
+        font-size: medium;
+        font-weight: 300;
+        margin: 0px 0px;
+        padding: 0px;
+        border-radius: 5px 0px 5px 0px;     
+   }
+    
+   .card-body .card-title {
+      font-size: large;
+      font-weight: 50;
+      color: #433451;
+      display: flex;
+      justify-content: flex-start;
+   }
+   
+   .card-text {
+       font-size: medium;
+       font-weight: 300;
+       text-align: center;
+   }
+
+}
+
+/* Desktop */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (orientation: landscape) {
+}
+
+/*INDEX.HTML*/
+
+/* Header */
+
+/* selector { 
+propiedad: valor;
+} */
+
+
+.Header-container {
+    background-color: #f5deb3;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-light{
+    --bs-bg-opacity: 0;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #db495e;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #db495e;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.nav-item {
+    color: #db495e;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 600; 
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: #db495e;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-brand {
+    color: #db495e;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.navbar-light .navbar-toggler {
+    color: #db495e;
+    border-color: #db495e;
+}
+
+
+/* Fin header */
+
+/* Section A*/
+
+.SectionA {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451;
+    padding-top: 20px;
+}
+
+.Name {
+    font-size:xx-large;
+    font-weight:  700;
+    color: #41868f;
+    font-family: 'Quicksand', sans-serif; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center; 
+}
+
+.Job {
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+    color: #433451;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.containera {
+    display: block;
+}
+
+.container-1 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-2 {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.proposal1 p {
+    display: flex;
+    text-align: justify;
+}
+
+.proposal2 p {
+    display: block;
+    text-align: center;
+    padding-left: 100 px;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+/* Fin section A*/
+
+/* Section B*/
+
+.SectionB {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451;
+    padding-bottom: 20px;
+}
+
+.Tith4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #f59dac79; 
+    border-radius: 35px 0px 35px 0px;  
+    border: 2px solid #f3516c3d;
+}
+
+.SectionBb {
+    background-color: #ece2c6;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    background: #f59dac79;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-img-top {
+    border-radius: 20px;
+}
+
+.card-title {
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-text {
+    font-family: 'Oxygen', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    
+}
+
+.btn-primary {
+    color: #433451;
+    background-color:#f59dac79;
+    border-radius: 35px;
+    border-color: #f3516c3d;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary:hover {
+    color: #433451;
+    background-color:#f59dac79;
+    border-color: #f3516c3d;
+    cursor: pointer;
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+/* Section C*/
+
+.containerb {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+.Objet {
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background: #f59dac79; 
+    overflow: hidden; 
+    border-radius: 35px 0px 35px 0px;  
+    border: 2px solid #f3516c3d;
+}
+
+.Texthome p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+/* Fin section C*/
+
+/* Footer */
+
+.footer-container {
+    background-color: #f5deb3;
+    border-top: 1.5px dashed #433451;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "logo media wsp";
+}
+
+.Logof {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+}
+
+.Logof img {
+    width: 40%;
+}
+
+.Media {
+    grid-area: media;
+    padding-top: 40px;
+}
+
+.Media ul li {
+    list-style: none;    
+}
+
+.Media ul {
+    display: flex;
+}
+
+.Inst a {
+    display: flex;
+    justify-content: end;
+}
+
+.Faceb a {
+    display: flex;
+    justify-content: center;
+}
+
+.Linkd a img {
+    display: flex;
+}
+
+.Wsp {
+    grid-area: wsp;
+}
+
+.Wsp a {
+    position: fixed;
+    bottom: 10px;
+    display: flex;
+    justify-content: end;
+    padding-top: 40px;
+}
+
+.Wsp img {
+    width: 20%;
+}
+
+.Media img {
+    width: 20%;
+}
+/* Fin footer */
+
+
+/*SOBREMI.HTML*/
+
+.Bio-container {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.Biograph {
+    display: flex;
+}
+
+.Biography {
+    font-family: 'Oxygen', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.Saludo {
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: auto;
+    margin: 20px;
+    text-align: center;
+    background: #f59dac79; 
+    overflow: hidden; 
+    border-radius: 35px 0px 35px 0px;  
+    border: 2px solid #f3516c3d;
+}
+
+.Biography p {
+    display: flex;
+    text-align: center;
+}
+
+.Biography a {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: none;
+}
+.Mica3 {
+   display: flex;
+}
+
+.SectionE-container {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+.SectionE {
+    display: block;
+}
+
+.Tittles2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background: #f59dac79; 
+    overflow: hidden; 
+    border-radius: 35px 0px 35px 0px;  
+    border: 2px solid #f3516c3d;
+}
+
+.SectionE p {
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.SectionE a {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    font-weight: 500;
+    text-decoration: none; 
+}
+
+/*PRODUCTOS.HTML*/
+
+.Products-container {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451; 
+}
+
+.Row1 {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.Tittles3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+    text-align: center;
+    background: #f59dac79; 
+    overflow: hidden; 
+    border-radius: 35px 0px 35px 0px;  
+    border: 2px solid #f3516c3d;
+}
+
+.P1 {
+    width: 50%;
+    padding-top: 20px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.Row2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.Productos {
+   padding-bottom: 20px; 
+   display: flex;
+   justify-content: center;  
+}
+
+#carouselExampleIndicators .carousel-slide{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-control-prev-icon .carousel-control-next-icon  {
+    color: #433451
+}
+
+.carousel-inner .carousel-item-active .carousel-item {
+    transition: all .2s;
+}
+
+.SectionF {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.SectionF a {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.Tittles4 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+}
+
+/*SERVICIOS.HTML*/
+
+.Services-container {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451;
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.container h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #433451;
+    
+}
+.container p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    text-align: justify;
+}
+
+
+/*CONTACTO.HTML*/
+
+.Contact-container {
+    background-color: #ece2c6;
+    border-top: 1.5px dashed #433451;
+}
+
+.Grid-p-contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.Contact {
+    font-family: 'Fredoka', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    color: #41868f;
+    padding-top: 20px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.Datos{
+    font-family: 'Oxygen', sans-serif;
+    font-size: medium;
+    font-weight: 500;
+    display: block;
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.Map {
+    display: flex;
+    justify-content: right;
+}

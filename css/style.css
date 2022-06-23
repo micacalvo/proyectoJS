@@ -1073,6 +1073,9 @@ h1 h2 {
   border-radius: 5px;
 }
 
+.warming {
+  background-color: red;
+}
 /* Colores */
 /* Fonts */
 /* Bordes */

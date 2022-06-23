@@ -1,5 +1,5 @@
 // Se le muestra al usuario los servicios disponibles, debería poder elegir el que necesite, se le comunica precio.
-// Pre-entrega 1
+// app.js se activa en la página de servicios 
 
 //Objeto constructor
 class Servicio {
@@ -9,7 +9,7 @@ class Servicio {
         this.precio = precio;
 }}
 
-// Un arrays para los servicios 
+//Un arrays para los servicios 
 
 const servicios = [];
 
@@ -21,17 +21,16 @@ servicios.push(new Servicio ("3", "Creación", 4000));
 // Le muestro al usuario los servicios 
 
 for(const servicio of servicios) {
-    alert ("¡Bienvenido! Los servicios disponibles son:")
-    alert ("ID" + " " + servicio.id + " " + servicio.nombre);
-}    
+    alert (`¡Bienvenido! Los servicios disponibles son: ID: ${servicio.id} ${servicio.nombre}`)
+}
 
 // Interacción con el usuario 
 
 let seleccion = prompt("Ingrese el ID de los servicios que desea adquirir (Solo los números 1, 2 o 3)");
 
 //Ahora dentro del array de servicios tengo que encontrar el id que coincida con el número que colocó el usuario
-const servicioElegido = servicios.find( ({ id }) =>  id === seleccion);
 
+const servicioElegido = servicios.find( ({ id }) =>  id === seleccion);
 
 // Se indica el precio final del servicio elegido 
 
@@ -45,4 +44,27 @@ if (servicioElegido.id === "1") {
     alert("El número ingresado no es válido")
 }
 
-// Dom y Eventos 
+// Dom en la sección servicios 
+// Tomo la sección creada en HTML
+
+let serviceContainer = document.getElementById("container-services");
+console.log(serviceContainer);
+
+const containers = [
+    {id: 1, nombre: "Imagen personal", precio: 3000},
+    {id: 2, nombre: "Asesoría express", precio: 3500},
+    {id: 3, nombre: "Creación", precio: 4000},
+];
+
+//Creo cards para los servicios 
+for(const container of containers);
+
+let card = document.createElement("card");
+card.innerHTML = 
+`<h3> Nombre del servicio: ${container.nombre} </h3>
+<h4> Precio: ${container.precio} </h4>
+<a class="btn btn-primary"> ¡Lo quiero! </a>`;
+
+document.body.appendChild(card);
+console.log(card)
+

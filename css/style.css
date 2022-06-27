@@ -1095,11 +1095,8 @@ h1 h2 {
   padding-bottom: 20px;
 }
 
-.container-fluid .card-text {
-  padding-top: 10px;
-}
-
 .card {
+  width: auto;
   margin: 0px 20px;
   background: #dadada;
   border-radius: 20px;
@@ -1107,6 +1104,7 @@ h1 h2 {
 }
 
 .card-img-top {
+  width: 50%;
   border-radius: 20px;
 }
 
@@ -1124,7 +1122,7 @@ h1 h2 {
   font-weight: 300;
 }
 
-.btn-primary a {
+.btn-primary button {
   font-family: "Oxygen", sans-serif;
   font-size: small;
   color: #131d39;

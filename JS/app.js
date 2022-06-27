@@ -29,32 +29,29 @@ saveData ("listaServicios", JSON.stringify(servicios));
 // Accedo a los datos del array (los capturo) -- Parse lo convierte a objeto o [] de nuevo 
 const data = JSON.parse(localStorage.getItem("listaServicios"));
 
-// Se crea el template a traer en Html
+// Se crea el template a traer en Html--DOM
 // Todas las constantes a utilizar
 
 const items = document.getElementById("items")
 const cards = document.getElementById("cards").content
 const imgCard = document.getElementsByClassName("card-img-top")
-const fragment = document.createDocumentFragment()  // El fragment lo creo porque me sirve para imprimir las cards
-//cards.querySelector("img").setAtributte("src", servicio.img)
+const buttonCard = document.getElementsByClassName("btn-primary")
+let carrito = {}
 
-/* for (servicio of servicios) {
-        const container = document.createElement("div")
-        container.innerHTML = `<img> ${servicio.img}</img>
-        <h5> ${servicio.nombre}</h5>
-        <p> ${servicio.precio}</p>
-        <buton> ¡Lo compro! </buton>`;
-        document.body.appendChild(container);
-}
+// Eventos 
 
- */// Funciones
+items.addEventListener("click", e => {
+     addCart(e)
+})  // con "e" capturo el elemento que quiero modificar
+
+// Funciones
 // Traigo el template para que se dibuje con la información en la página
 
 function renderizarCards() {
     servicios.forEach(servicio => {
         // Estructura de las cards
         const container = document.createElement("div");
-        container.classList.add("card");
+        container.classList.add("card"); //Con classList.add agrego las clases de CSS
         
         // Body con sus elementos
         const cardBody = document.createElement ("div");
@@ -64,27 +61,39 @@ function renderizarCards() {
         imgBody.classList.add("card-img-top");
         imgBody.setAttribute("src", servicio.img);
 
-        const cardTittle = document.createElement ("h5");
+        const cardTittle = document.createElement("h5");
         cardTittle.classList.add("card-title");
         cardTittle.textContent = servicio.nombre;
 
-        const cardPrecio = document.createElement ("p");
+        const cardPrecio = document.createElement("p");
         cardPrecio.classList.add("p");
         cardPrecio.textContent = servicio.precio;
+
+        const cardButton = document.createElement("button");
+        cardButton.classList.add("btn-primary")
+        cardButton.dataset.id = servicio.id;
+        cardButton.innerHTML = `¡Lo compro!`
+
 
   container.appendChild(cardBody)  
   cardBody.appendChild(imgBody)     
   cardBody.appendChild(cardTittle)
   cardBody.appendChild(cardPrecio)
+  cardBody.appendChild(cardButton)
 
   items.appendChild(container)
-    });
-    
+});
 }
 renderizarCards()
-//const pCards = data => {
-   // console.log (data)
-//}
+
+
+const addCart = e => {
+    // console.log(e.target.classList.contains("btn-primary")) // Veo en consola si el elemento contiene la clase. Me debe tirar true o false
+    if (e.target.classList.contains("btn-primary")) {
+
+
+    }
+}
 // Le muestro al usuario los servicios 
 
 /* for(const servicio of servicios) {
@@ -110,29 +119,4 @@ renderizarCards()
 } else {
     alert("El número ingresado no es válido")
 }
- */
-// Dom en la sección servicios 
-// Tomo la sección creada en HTML
-
-/* let serviceContainer = document.getElementById("container-services");
-console.log(serviceContainer);
-
-const containers = [
-    {id: 1, nombre: "Imagen personal", precio: 3000},
-    {id: 2, nombre: "Asesoría express", precio: 3500},
-    {id: 3, nombre: "Creación", precio: 4000},
-];
- */
-//Creo cards para los servicios 
-/* for(const container of containers);
-
-let card = document.createElement("card");
-card.innerHTML = 
-`<h3> Nombre del servicio: ${container.nombre} </h3>
-<h4> Precio: ${container.precio} </h4>
-<a class="btn btn-primary"> ¡Lo quiero! </a>`;
-
-document.body.appendChild(card);
-console.log(card)
-
  */

@@ -2,7 +2,7 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.section-carrito, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -105,7 +105,7 @@ h2 {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.section-carrito, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -171,7 +171,7 @@ a {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.section-carrito, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -514,7 +514,7 @@ p {
   }
 }
 /* Desktop */
-.section-carrito, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title {
+thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title {
   display: flex;
   justify-content: center;
 }
@@ -707,7 +707,7 @@ h3 {
   }
 }
 /* Desktop */
-.section-carrito, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a {
+thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -821,7 +821,7 @@ h1 h2 {
   }
 }
 /* Desktop */
-.section-carrito, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1 {
+thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1 {
   display: flex;
   justify-content: center;
 }
@@ -1005,7 +1005,7 @@ ol li {
   }
 }
 /* Desktop*/
-.section-carrito, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn {
+thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn {
   display: flex;
   justify-content: center;
 }
@@ -1077,7 +1077,7 @@ h1 h2 {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.section-carrito, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact {
+thead, #template-cards, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact {
   display: flex;
   justify-content: center;
 }
@@ -1089,22 +1089,32 @@ h1 h2 {
 }
 
 .section-carrito {
+  display: flex;
+}
+
+#template-cards {
   border-top: 1.8px dashed #433451;
   background-color: #d9d9d9;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.card {
-  width: auto;
+.cards {
   margin: 0px 20px;
   background: #dadada;
   border-radius: 20px;
   border-color: #131d39;
 }
 
+tbody {
+  display: block;
+}
+
+tr {
+  display: block;
+}
+
 .card-img-top {
-  width: 50%;
   border-radius: 20px;
 }
 
@@ -1139,11 +1149,15 @@ h1 h2 {
   transform: scale(1.5);
 }
 
+#template-footer {
+  display: block;
+}
+
 /* Colores */
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact, .section-carrito {
+.Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact, #template-cards, thead {
   display: flex;
   justify-content: center;
 }

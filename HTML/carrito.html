@@ -27,30 +27,131 @@
 <body>
     
 <header></header>
-<section class="carrito">
-        <div class="container-fluid">
-            <h1></h1>
-        </div>
-</section>        
+<!-- 
+Sección cards
+<section class="section-cards">
+  
+          
+</section>
 
-<section class="section-carrito">
-
-<!--Sección cards-->  
-
-<div class="row" id="items">
-   <template id="cards">
-    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"> <div class="cards">
-        <img src="" class="card-img-top" alt="Imagenes de los servicios">
+<section class="section-items">
+  <thead id="items">
+  <div class="row" id="template-cards">
+    <div class="col-12 mb-2"> <div class="cards">
+        <img src="" class="card-img-top" alt="">
         <div class="card-body">
             <h5 class="card-title"></h5>
             <p class="card-text"></p>
-            <button class="btn btn-primary">¡Lo compro!</button>
-
-        </div>
+            <button class="btn btn-primary"></button>
+         </div>
         </div>
     </div>
+ </div>
+</thead>
+
+ <h4>Carrito de compras</h4>
+  <table class="table">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Item</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Total</th>
+      </tr>
+      <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td></td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar carrito
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span></span></td>
+      </template>
+      <tr id="footer">
+        <th scope="row" colspan="5">Carrito vacío - ¡Comience a comprar!</th>
+      </tr>
+  </table>
+  <h4></h4>
+  <div class="row" id="cards"></div>
+</section>
+  
+<section>
+
+</section>
+
+<section>
+<template id="template-carrito">
+  <tr>
+    <th scope="row"></th>
+    <td></td>
+    <td></td>
+    <td>
+        <button class="btn btn-info btn-sm">
+        </button>
+        <button class="btn btn-danger btn-sm">
+        </button>
+    </td>
+    <td>$<span></span></td>
+  </tr>
+</template>
+</section> -->
+<section class="section-carrito">
+  <div class="container">
+    <h4>Carrito de compras</h4>
+    <table class="table">
+      <thead id="items"></thead>
+      <tbody>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Item</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Total</th>
+        </tr>
+      </tbody>
+      
+      <tfoot>
+        <tr id="footer">
+          <th scope="row" colspan="5">Carrito vacío - ¡Comience a comprar!</th>
+          <template id="template-carrito">
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td>$ <span></span></td>
+            </tr>
+          </template>
+        </tr>
+      </tfoot>
+    </table>
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td></td>
+      <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+              Vaciar carrito
+          </button>
+      </td>
+      <td class="font-weight-bold">$ <span></span></td>
+  </template>
+    <h4></h4>
+    <div class="row" id="cards"></div>
+
 </div>
-</template>       
+
+  
+  
+  
+  <template id="template-cards">
+    <div class="col-12 mb-2">
+      <div class="cards">
+        <div class="card-body">
+          <h5></h5>
+          <p></p>
+          <button class="btn btn-primary"></button>
+        </div>
+      </div>
+    </div>
+  </template>
 </section>
 <footer></footer>
     

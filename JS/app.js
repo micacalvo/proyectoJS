@@ -29,6 +29,7 @@ const templateFooter = document.getElementById("template-footer").content
 const templateCarrito = document.getElementById("template-carrito").content
 const footer = document.getElementById("footer")
 const bVaciar = document.getElementById("vaciar-carrito")
+//const confirmar = document.getElementById("confirmar")
 let carrito = {}
 
 // Eventos 
@@ -39,6 +40,17 @@ document.addEventListener('DOMContentLoaded', (e) => { // "DOMContentLoaded" se 
 
 items.addEventListener("click", e => {
      addCart(e)
+     Swal.fire ({
+        title: '¡Bien!',
+        text: 'Has agregado el servicio al carrito',
+        icon: 'success',
+        position: "top-right",
+        showConfirmButton: false,
+        timer: 3000,
+        width: 400,
+        background: "#dadada",
+        color: "#131d39"
+    })
 }) // con "e" capturo el elemento que quiero modificar, en este caso el botón comprar
 
 cards.addEventListener("click", e => {
@@ -146,29 +158,41 @@ const dibujoFooter = () => {
         return
     }
 
-    const sumaCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad, 0)    //Vuelvo a usar el "Objects.values" para acceder al carrito y "cantidad" para que en cada iteración me vaya sumando lo anterior
+const sumaCantidad = Object.values(carrito).reduce((acc, {cantidad}) => acc + cantidad, 0)    //Vuelvo a usar el "Objects.values" para acceder al carrito y "cantidad" para que en cada iteración me vaya sumando lo anterior
 
-   const precioTotal = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
-   console.log(precioTotal)
+const precioTotal = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio, 0)
+console.log(precioTotal)
 
-   templateFooter.querySelectorAll("td")[0].textContent = sumaCantidad 
-   templateFooter.querySelector("span").textContent = precioTotal
+templateFooter.querySelectorAll("td")[0].textContent = sumaCantidad 
+templateFooter.querySelector("span").textContent = precioTotal
 
-   const clone = templateFooter.cloneNode(true)
-   fragment.appendChild(clone)
-   footer.appendChild(fragment)
+const clone = templateFooter.cloneNode(true)
+fragment.appendChild(clone)
+footer.appendChild(fragment)
 
-   const bVaciar = document.getElementById("vaciar-carrito")
+const bVaciar = document.getElementById("vaciar-carrito")
    // Evento vaciar carrito
-   bVaciar.addEventListener("click", () => {
+bVaciar.addEventListener("click", () => {
     carrito = {}
     dibujoCarrito()
-})}
-
+    Swal.fire ({
+        title: '¡NO!',
+        text: "Se vaciara el carrito",
+        icon: 'warning',
+        position: "bottom",
+        showCancelButton: true,
+        showConfirmButton: false,
+        timer: 3000,
+        width: 400,
+        background: "#dadada",
+        color: "rgb(0, 0, 0)",
+})
+})
+}
 // Para evitar que el carrito se borre cuando actualizo la página necesito un localStorage. La información original del carrito es un objeto vacio, ahora tengo que imprimir la nueva información. Esta nueva información la guardo en localStorage.setItem
 
 // Almaceno array -- Stringify me convierte el {} o [] a texto
 localStorage.setItem("servicios", JSON.stringify(servicios))
 
 // Accedo a los datos del array (los capturo) -- Parse lo convierte a {} o [] de nuevo 
-servicios = JSON.parse(localStorage.getItem('servicios'));
+servicios = JSON.parse(localStorage.getItem('servicios'))

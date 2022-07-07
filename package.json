@@ -15,5 +15,8 @@
     "url": "https://github.com/micacalvo/Design-/issues"
   },
   "homepage": "https://github.com/micacalvo/Design-#readme",
+  "dependencies": {
+    "sweetalert2": "^11.4.20"
+  },
   "description": ""
 }

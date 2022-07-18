@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nombre": "Imagen personal",
+        "precio": 3500,
+        "img": "../Multimedia/Imagenes/asesoria-1.jpg"
+    },
+
+    {
+        "id": 2,
+        "nombre": "Asesoria express",
+        "precio": 4000,
+        "img": "../Multimedia/Imagenes/asesoria-2.jpg"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Creaciones",
+        "precio": 4500,
+        "img": "../Multimedia/Imagenes/creaciones.jpg"
+    }
+]

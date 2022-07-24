@@ -9,8 +9,7 @@ thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-lab
 
 .Header-container {
   background-color: #a09cb0;
-  display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 h1 {
@@ -40,6 +39,9 @@ h2 {
   font-family: "Courier New", Courier, monospace;
   font-size: x-large;
   font-weight: 600;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -73,6 +75,10 @@ h2 {
 .navbar-light .navbar-toggler {
   color: rgb(68, 68, 68);
   border-color: #5e595a;
+}
+
+.nav-item .nav-link .img-carrito {
+  width: 10%;
 }
 
 /* @Media Header */

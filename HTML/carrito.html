@@ -30,17 +30,62 @@
 <title>Micaela Calvo | Carrito</title>
 </head>
 <body>
-    
-<header></header>
 
-  <div class="container">
-    <h4>Carrito de compras</h4>
+  <!-- Header -->
+<header class="Header-container">
+
+<div> 
+  <h1> Asesoria de imagen</h1>
+  <h2> Diseño de indumentaria </h2>
+</div>
+ 
+  <!-- Nav de Bootstrap-->
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sobremi.html">Sobre mi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="servicios.html">Servicios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="creaciones.html">Creaciones</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carrito.html"><img class="img-fluid-w-100" src="../Multimedia/Imagenes/carrito.png" alt="Imagen carrito de compras"></a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+</header>
+ 
+<!-- Fin header -->
+<div class="section-cart">
+<div class="container">
+  <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+    <h3 class="Tith4"> <span class="underline">Carrito de compras</h3></span></div>
     <table class="table">
     <thead>
-      <tr>
+      <tr class="texthome">
         <th scope="col">#</th>
-        <th scope="col">Item</th>
+        <th scope="col">Servicio</th>
         <th scope="col">Cantidad</th>
+        <th scope="col">Quitar</th>
         <th scope="col">Total</th>
       </tr>
     </thead>
@@ -49,7 +94,7 @@
     
     <tfoot>
         <tr id="footer" class="lineaCarrito">
-         <th scope="row" colspan="5">Carrito vacío - ¡Comience a comprar!</th>
+         <th scope="row" colspan="5"> Carrito vacío - ¡Comience a comprar!</th>
         </tr>
     </tfoot>
     </table>
@@ -59,7 +104,7 @@
 </div>
 
 <template id="template-footer">
-      <th scope="row" colspan="2">Total productos</th>
+      <th scope="row" colspan="2" class="carritoLleno">Total en carrito</th>
       <td class="sumaCantidad"></td>
       <td>
           <button class="btn btn-danger btn-sm" id="vaciar-carrito">
@@ -70,27 +115,68 @@
 </template>
     
 <template id="template-carrito">
-  <tr>
-    <th scope="row"></th>
+  <tr class="cart">
+    <th scope="row" class="id">id</th>
     <td class="name"></td>
-    <td class="cantidad"></td>
-    <td class="precio"><span></span></td>
+    <td class="cantidad">1</td>
+    <td>
+        <button class="btn btn-danger btn-sm">
+            Quitar
+        </button>
+    </td>
+    <td class="precio">$ <span></span></td>
   </tr>
 </template>
 
 <template id="template-cards">
-    <div class="col-12 mb-2">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
       <div class="cards">
+        <img src="" alt="" class="card-img-top">
         <div class="card-body">
-          <h5></h5>
-          <p></p>
-          <button class="btn btn-primary"></button>
+          <h5 class="card-title"></h5>
+          <p class="costo">$</p>
+          <button class="btn btn-primaryA">¡Lo compro!</button>
         </div>
       </div>
-    </div>
+      </div>
 </template>
+</div>
 
-<footer></footer>
+<footer> 
+  
+<!-- Redes y Wsp-->
+
+<div class="footer-container">
+<div class="container-fluid">  
+<div data-aos="fade-right"
+data-aos-duration="1500">
+
+<a class="social-icon" data-tooltip="Instagram" href="https://www.instagram.com/micacalvo.imagen/">
+<img class="inst" src="../Multimedia/Imagenes/instic.png" alt="Instagram">
+</a>
+
+<a class="social-icon" data-tooltip="Facebook" href="https://www.facebook.com/Micaela-Calvo-100911131641226/?ti=as">
+<img class="faceb" src="../Multimedia/Imagenes/facebic.png" alt="facebook">
+</a>
+
+<a class="social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/micaela-calvo-0973a0229">
+<img class="linkd" src="../Multimedia/Imagenes/linkdic.png" alt="linkedin">
+</a>
+
+<a class="social-icon" data-tooltip="Whatsapp" href="https://wa.me/543512905798?text=Hola">
+<img class="wsp" src="../Multimedia/Imagenes/wspic.png" alt="Whatsapp">
+</a>
+</div>
+</div>
+
+<div class="fo">
+<p> ©2022. Micaela Calvo. Todos los derechos reservados. 
+</p>
+Córdoba Capital- Argentina
+</div>
+</div>
+
+</footer>
     
 <!-- Animaciones-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

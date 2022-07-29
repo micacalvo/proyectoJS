@@ -2,7 +2,7 @@
 /* Fonts */
 /* Bordes */
 /* Paddings */
-thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -39,9 +39,8 @@ h2 {
   font-family: "Courier New", Courier, monospace;
   font-size: x-large;
   font-weight: 600;
+  display: inline;
   align-items: center;
-  display: flex;
-  justify-content: center;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -77,8 +76,22 @@ h2 {
   border-color: #5e595a;
 }
 
-.nav-item .nav-link .img-carrito {
-  width: 10%;
+ul {
+  width: 100%;
+  justify-content: center;
+}
+
+li {
+  display: inline;
+  align-items: center;
+}
+
+a {
+  display: inline;
+}
+
+a .img-fluid-w-100 {
+  width: 15%;
 }
 
 /* @Media Header */
@@ -93,6 +106,10 @@ h2 {
     font-size: small;
     font-weight: 600;
   }
+
+  a .img-fluid-w-100 {
+    width: 5%;
+  }
 }
 /* Tablets */
 @media screen and (min-width: 401px) and (max-width: 1023px) {
@@ -105,13 +122,17 @@ h2 {
     font-size: small;
     font-weight: 600;
   }
+
+  a .img-fluid-w-100 {
+    width: 5%;
+  }
 }
 /* Desktop */
 /* Colores */
 /* Fonts */
 /* Bordes */
 /* Paddings */
-thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -177,7 +198,7 @@ a {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .card-title, .card, .SectionB, .SectionBb, .container-1, .Name {
   display: flex;
   justify-content: center;
 }
@@ -520,7 +541,7 @@ p {
   }
 }
 /* Desktop */
-thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .SectionE a, .SectionE-container, h1 h2, .container-fluid .row, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title {
   display: flex;
   justify-content: center;
 }
@@ -713,7 +734,7 @@ h3 {
   }
 }
 /* Desktop */
-thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .service-1, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a {
   display: flex;
   justify-content: center;
 }
@@ -827,7 +848,7 @@ h1 h2 {
   }
 }
 /* Desktop */
-thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1 {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .btn, .Row2 .P2, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1 {
   display: flex;
   justify-content: center;
 }
@@ -1011,7 +1032,7 @@ ol li {
   }
 }
 /* Desktop*/
-thead, #template-cards, .contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn {
+.contact, .col-md-5-comprar, .col-md-5-enviar, .form-label, .row, .Grid.contact, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn {
   display: flex;
   justify-content: center;
 }
@@ -1083,7 +1104,7 @@ h1 h2 {
 /* Fonts */
 /* Bordes */
 /* Paddings */
-thead, #template-cards, .Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact {
+.Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact {
   display: flex;
   justify-content: center;
 }
@@ -1094,8 +1115,11 @@ thead, #template-cards, .Name, .container-1, .SectionBb, .SectionB, .card, .card
   box-sizing: border-box;
 }
 
-.section-carrito {
-  display: flex;
+.section-cart {
+  background-color: #eae6ca;
+  border-top: 1.8px dashed #433451;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #template-cards {
@@ -1103,6 +1127,7 @@ thead, #template-cards, .Name, .container-1, .SectionBb, .SectionB, .card, .card
   background-color: #d9d9d9;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: inline-flex;
 }
 
 .cards {
@@ -1112,42 +1137,63 @@ thead, #template-cards, .Name, .container-1, .SectionBb, .SectionB, .card, .card
   border-color: #131d39;
 }
 
+.texthome {
+  font-family: "Oxygen", sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+
 tbody {
-  display: block;
+  font-family: "Oxygen", sans-serif;
+  font-size: medium;
+  font-weight: 500;
 }
 
 tr {
-  display: block;
+  font-family: "Oxygen", sans-serif;
+  font-size: medium;
+  font-weight: 500;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1rem;
+  vertical-align: top;
 }
 
 .card-img-top {
   border-radius: 20px;
 }
 
-.card-title {
-  font-family: "Fredoka", sans-serif;
-  font-size: x-large;
-  font-weight: 500;
-  color: #131d39;
+.card-body {
+  display: block;
   text-align: center;
 }
 
-.card-text {
+.card-title {
+  text-align: center;
   font-family: "Fredoka", sans-serif;
-  font-size: medium;
-  font-weight: 300;
+  font-size: x-large;
+  font-weight: 600;
+  color: #131d39;
 }
 
-.btn-primary button {
+.costo {
+  text-align: center;
   font-family: "Oxygen", sans-serif;
-  font-size: small;
+  font-size: large;
+  font-weight: 500;
+}
+
+.btn-primaryA {
+  font-family: "Oxygen", sans-serif;
+  font-size: medium;
   color: #131d39;
-  background-color: #41868f;
   border-radius: 35px;
   border-color: #433451;
 }
 
-.btn-primary:hover {
+.btn-primaryA:hover {
   background-color: #41868f;
   border-color: #131d39;
   cursor: pointer;
@@ -1155,19 +1201,20 @@ tr {
   transform: scale(1.5);
 }
 
-#template-carrito {
-  display: block;
-}
-
-#template-footer {
-  display: block;
+.btn-danger {
+  font-family: "Oxygen", sans-serif;
+  font-size: medium;
+  color: #131d39;
+  border-radius: 35px;
+  border-color: #433451;
+  background-color: #eae6ca;
 }
 
 /* Colores */
 /* Fonts */
 /* Bordes */
 /* Paddings */
-.Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact, #template-cards, thead {
+.Name, .container-1, .SectionBb, .SectionB, .card, .card-title, .container-fluid .row, h1 h2, .SectionE-container, .SectionE a, .service-1, .Row2 .P2, .btn, .Grid.contact, .row, .form-label, .col-md-5-enviar, .col-md-5-comprar, .contact {
   display: flex;
   justify-content: center;
 }
